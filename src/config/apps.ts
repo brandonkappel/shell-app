@@ -8,14 +8,14 @@ export interface RemoteAppDefinition {
 }
 
 export const APP_REGISTRY: Record<string, RemoteAppDefinition> = {
-  // https://platform-poc.progressionalfitness.com/app/app-one/remoteEntry.js
+  // https://platform-poc.progressionalfitness.com/assets/app-one/remoteEntry.js
   'app-one': {
     label: 'App One',
     url:
       import.meta.env.VITE_APP_ONE_URL ??
       'http://localhost:5174/src/remoteEntry.ts',
   },
-  // https://platform-poc.progressionalfitness.com/app/app-two/remoteEntry.js
+  // https://platform-poc.progressionalfitness.com/assets/app-two/remoteEntry.js
   'app-two': {
     label: 'App Two',
     url:
